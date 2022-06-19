@@ -1,0 +1,597 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  background: url("../img/home-bg.svg") no-repeat center top
+    size: cover
+  position: relative
+  padding: 90px 0 169px
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: 27px
+    width: 1118px
+    height: 49px
+    background: url("../img/home-decor.svg") no-repeat center
+      size: 100%
+
+.sing-box
+  margin: 0 0 0 auto
+  border-radius: 15px
+  box-shadow: 0 22.9851px 45.9702px rgba(0, 0, 0, 0.4)
+  max-width: 373px
+  width: 100%
+  background: rgba(#fff, .98)
+  padding: 21px 19px 15px
+  font-family: $btn-font
+
+  h3
+    text-align: center
+    margin: 0 auto 11px
+    font-size: 27px
+    font-weight: bold
+    color: #000000
+  .box-text
+    text-align: center
+    margin: 0 auto 30px
+    color: rgba(0, 0, 0, 0.6)
+    font-size: 12px
+    font-weight: 300
+
+.form-sing
+
+  .radio
+    margin: 0 auto 0 0
+  .form-row
+    font-size: 9px
+    font-weight: 500
+
+.form-wrapper
+  max-width: 289px
+  width: 100%
+  margin: 0 auto
+
+/*==========  section home end  ==========*/
+
+/*==========  section what-trading ==========*/
+.what-trading
+  margin: 130px 0 39px
+
+/*==========  section what-trading end  ==========*/
+
+/*==========  section trading-russia ==========*/
+.trading-russia
+  padding: 51px 0 72px
+  background: linear-gradient(180deg, rgba(232, 235, 244, 0) 0%, #E8EBF4 15.62%, #E8EBF4 83.85%, rgba(232, 235, 244, 0) 100%)
+
+.trading-russia-box
+  width: 100%
+  padding: 17px 19px 19px
+  line-height: 150%
+  border-radius: 14px
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13)
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  strong
+    display: inline
+
+.bg-green
+  background: #E4FFEF
+
+.bg-orange
+  background: #FFF6E4
+
+.color-green
+  color: #28A559
+
+.color-orange
+  color: #EA9633
+
+.trading-russia-box.bg-green
+  border: 1px solid #28A559
+
+.trading-russia-box.bg-orange
+  border: 1px solid #EA9633
+
+.taxes
+  margin: 30px 0 0
+  h3
+    margin: 0 0 60px
+    font-size: 24px
+
+.taxes-wrapper
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.taxes-box
+  width: calc(33.3% - 30px)
+  background: #fff
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13)
+  border: 1px solid rgba(0, 0, 0, 0.2)
+    radius: 14px
+  padding: 17px 20px 21px 21px
+  line-height: 150%
+  position: relative
+  &:first-child
+    height: fit-content
+    &:before
+      content: ''
+      position: absolute
+      left: calc(50% + 106px)
+      bottom: -103px
+      width: 212px
+      height: 91px
+      transform: translate(-50%,0)
+      background: url("../img/arrow1.svg") no-repeat center
+        size: 100%
+  &:nth-child(2), &:last-child
+    margin: 52px 0 0
+  &:nth-child(2)
+    &:before
+      content: ''
+      position: absolute
+      top: -52px
+      left: calc(50% + 203px)
+      transform: translate(-50%,0)
+      width: 405px
+      height: 40px
+      background: url("../img/arrow2.svg") no-repeat center
+        size: 100%
+
+
+/*==========  section trading-russia end  ==========*/
+
+/*==========  section software ==========*/
+.software
+  margin: 58px 0 36px
+  h3
+    margin: 60px 0
+    font-size: 24px
+    font-weight: bold
+
+.software-box
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 0 0 20px
+  padding: 25px 41px 17px 39px
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13)
+  border-radius: 14px
+  min-height: 180px
+  &__icon
+    width: 66px
+    min-width: 66px
+    height: 66px
+    margin: 0 37px 0 0
+    box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36)
+    border-radius: 15px
+    padding: 13px
+    @include d-flex
+  &__text
+    padding: 20px 0 0
+  h4
+    margin: 0 0 20px
+    font-weight: bold
+    font-size: 20px
+  p
+    line-height: 150%
+  &.bg-blue
+    border: 1px solid rgba(57, 138, 248, 0.2)
+    background: #E0EEFF
+    h4
+      color: #4492FA
+    .software-box__icon
+      background: linear-gradient(154.49deg, #5CA1FE 6.61%, #217BF4 89.72%)
+  &.bg-orange
+    border: 1px solid rgba(255, 157, 0, 0.2)
+    background: #FFF3E0
+    h4
+      color: #FFBC50
+    .software-box__icon
+      background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%)
+      box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3)
+  &.bg-red
+    border: 1px solid rgba(246, 96, 102, 0.2)
+    background: #FFE0E0
+
+    h4
+      color: #F65E64
+    .software-box__icon
+      box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3)
+      background: linear-gradient(154.49deg, #FF858A 6.61%, #F04148 89.72%)
+
+
+.advantages-software
+  width: 100%
+  margin: 40px 0 0
+  border: 1px solid #6C7386
+    radius: 14px
+  overflow: hidden
+  background: #ffffff
+  line-height: 150%
+  &__title
+    padding: 16px
+    text-align: center
+    border: 1px solid #6C7386
+    background: #6C7386
+    color: #fff
+  &__body
+    width: 100%
+    display: flex
+    align-items: stretch
+    flex-wrap: wrap
+    &-item
+      flex: 1
+      padding: 18px 40px
+      text-align: center
+      border:
+        right: 1px solid #6C7386
+      &:last-child
+        border: none
+
+/*==========  section software end  ==========*/
+
+/*==========  section xsignals ==========*/
+.xsignals
+  padding: 94px 0 55px
+  background: linear-gradient(180deg, rgba(232, 235, 244, 0) 0%, #E8EBF4 15.62%, #E8EBF4 83.85%, rgba(232, 235, 244, 0) 100%)
+
+.xsignals-box
+  width: 100%
+  height: 100%
+  min-height: 180px
+  display: flex
+  align-items: flex-start
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13)
+  background: #fff
+  border: 1px solid rgba(0, 0, 0, 0.2)
+    radius: 14px
+  padding: 32px 50px 16px 24px
+  &__icon
+    width: 79px
+    height: 79px
+    position: relative
+    z-index: 1
+    //border-radius: 20px
+    //backdrop-filter: blur(24px)
+    @include d-flex
+    img
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 150px
+      max-width: none
+  &__body
+    width: calc(100% - 104px)
+    margin-left: auto
+  p
+    color: #515974
+    max-width: 388px
+
+  h4
+    margin: 0 0 10px
+    font-size: 20px
+    font-weight: 600
+
+/*==========  section xsignals end  ==========*/
+
+
+
+/*==========  section how-work ==========*/
+.how-work
+  background: url("../img/work-bg.svg") no-repeat center top
+    size: cover
+  padding: 35px 0 55px
+  margin: 0 0 130px
+  &__image
+    @include d-flex
+    box-shadow: 5px 5px 10px -12px rgba(2, 9, 166, 0.3)
+    border-radius: 15px
+    overflow: hidden
+    max-width: 703px
+    width: 100%
+    margin-left: auto
+    img
+      width: 100%
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    height: 100%
+  h2
+    text-transform: none
+    font-family: $default-font
+    position: relative
+    color: #7095D1
+    font-weight: 300
+    font-size: 40px
+    line-height: 120%
+    letter-spacing: -0.05em
+    margin: 0 0 19px
+    padding: 0 106px 0 0
+    &:before
+      content: '?'
+      transform: rotate(17.53deg)
+      font-size: 250px
+      font-weight: bold
+      position: absolute
+      letter-spacing: -0.03em
+      color: #7095D1
+      right: -30px
+      top: 60px
+    strong
+      display: block
+      line-height: 120%
+      font-size: 65px
+      font-weight: bold
+  .text
+    color: #515974
+    line-height: 26px
+    max-width: 356px
+    width: 100%
+
+
+/*==========  section how-work end  ==========*/
+
+/*==========  section signals-info ==========*/
+.signals-info
+  margin: 80px 0
+  h3
+    margin: 0 0 26px
+    font-weight: bold
+    font-size: 24px
+
+.list-check
+  line-height: 26px
+  li
+    margin: 0 0 17px
+    padding: 0 0 0 43px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: -5px
+      top: 4px
+      width: 42px
+      height: 39px
+      background: url("../img/check-icon.svg") no-repeat center
+        size: 100%
+    &:last-child
+      margin: 0
+
+.signals-info-box
+  margin: 60px 0 0
+  padding: 20px
+  background: url("../img/figure-bg.svg") no-repeat center top
+    size: 100%
+  position: relative
+  filter: drop-shadow(0px 0px 30px rgba(4, 28, 55, 0.2))
+  min-height: 542px
+  &__image
+    @include d-flex
+    max-width: 426px
+    min-width: 426px
+    width: 100%
+    margin: -40px -30px auto
+
+.list-number
+  line-height: 18px
+  font-size: 12px
+  counter-reset: item
+  p
+    font-weight: bold
+  &__item
+    margin: 0 0 35px
+    position: relative
+    padding-left: 31px
+    max-width: 290px
+  &__num
+    position: absolute
+    left: 0
+    top: 0
+    font-weight: bold
+
+
+.signals-info-col1
+  .list-number
+    &__item
+      &:last-child
+        min-width: 497px
+        max-width: 497px
+        margin: 0
+
+.signals-info-col2
+  max-width: 292px
+  margin-left: auto
+  .list-number
+    display: flex
+    flex-direction: column-reverse
+    &__item
+      margin: 0 0 28px
+      max-width: 295px
+      &:first-child
+        right: calc(100% - 30px)
+        min-width: 567px
+        max-width: 567px
+        margin: 0
+
+.signals-info-box2
+  min-height: auto
+  background: url("../img/figure-bg2.svg") no-repeat center bottom
+    size: 100%
+
+.signals-info-box__image2
+  max-width: 602px
+  min-width: 602px
+  margin: 0 -60px 30px
+
+.signals-info-row
+  width: 100%
+  margin: 10px auto -5px
+  .list-number
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+    &__item
+      flex: auto
+      margin: 0
+      &:first-child
+        max-width: 292px
+      &:nth-child(2)
+        max-width: 169px
+      &:nth-child(3)
+        max-width: 244px
+      &:last-child
+        max-width: 260px
+
+.signals-info-col3
+  max-width: 242px
+  .list-number
+    &__item
+      margin: 0 0 30px
+
+.signals-info-col4
+  max-width: 260px
+  margin-left: auto
+  .list-number
+    display: flex
+    flex-direction: column-reverse
+    &__item
+      margin: 0 0 15px
+
+
+/*==========  section signals-info end  ==========*/
+.strategy
+  margin: 130px 0
+
+.strategy-slider-item
+  width: 100%
+  position: relative
+  overflow: hidden
+  color: #fff
+  background: linear-gradient(270deg, #9AC4EA 52.08%, rgba(255, 255, 255, 0) 100%)
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/decor-slide.svg") no-repeat center
+      size: 100%
+    width: 622px
+    height: 614px
+    right: -134px
+    top: -32px
+
+  &.bg-orange
+    background: linear-gradient(270deg, #EEBC6C 52.08%, rgba(255, 255, 255, 0) 100%)
+  &__content
+    height: 100%
+    padding: 66px 0 118px 25px
+    h3
+      margin: 0 0 20px
+      font-weight: bold
+      font-size: 24px
+
+.strategy-image
+  @include d-flex
+  margin: 0 auto
+
+/*==========  section strategy ==========*/
+
+/*==========  section strategy end  ==========*/
+
+/*==========  section tips ==========*/
+.tips
+  margin: 130px 0
+  h2
+    margin: 0 0 54px
+
+.tips-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+.tips-box
+  position: relative
+  text-align: center
+  z-index: 1
+  width: calc(50% - 4px)
+  margin: 0 0 4px
+  padding: 40px 0 20px
+  background: linear-gradient(313.69deg, #94FFDF 0%, rgba(217, 217, 217, 0) 49.31%)
+  &:nth-child(2)
+    background: linear-gradient(40deg, #83CBFF 0%, rgba(217, 217, 217, 0) 49.31%)
+  &:nth-child(3)
+    background: linear-gradient(210deg, #83CBFF 0%, rgba(217, 217, 217, 0) 49.31%)
+  &:nth-child(4)
+    background: linear-gradient(140deg, #94FFDF 0%, rgba(217, 217, 217, 0) 49.31%)
+  &__icon
+    @include d-flex
+    margin: 0 auto 20px
+  h4
+    font-weight: bold
+    margin: 0 auto 15px
+    width: 100%
+    text-align: center
+    max-width: 407px
+  .text
+    max-width: 453px
+    font-size: 13px
+    line-height: 22px
+    color: #515974
+    margin: 0 auto
+
+/*==========  section tips end  ==========*/
+
+/*==========  section how-earn ==========*/
+.how-earn
+  margin: 0 0 109px
+  h2
+    margin: 0 0 60px
+
+.how-earn-box
+  margin: 0 0 30px
+  min-height: 146px
+  display: flex
+  align-items: flex-start
+  color: #515974
+  font-size: 13px
+  max-width: 395px
+  &__number
+    max-width: 90px
+    font-size: 96px
+    font-weight: 700
+    line-height: 1
+    margin-top: -15px
+    background: linear-gradient(180deg, #FFD567 -95.45%, #D2A124 204.55%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    text-shadow: 0px 0px 15px #FFEDAB, 0px 0px 50px rgba(0, 0, 0, 0.25)
+  &__body
+    width: calc(100% - 90px)
+    margin: 0 0 0 auto
+  h3
+    font-weight: bold
+    margin: 0 0 10px
+  p
+    line-height: 22px
+
+.how-earn__img
+  margin: -160px 0 0 auto
+  max-width: 470px
+  @include d-flex
+
+/*==========  section how-earn end  ==========*/

@@ -1,0 +1,114 @@
+footer p {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  text-align: start; }
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #232439;
+  padding-bottom: 30px;
+  gap: 130px;
+  padding-top: 20px;
+  z-index: 2; }
+
+.footer__logo, .footer__column {
+  z-index: 2; }
+
+.footer__legal-column--header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #969696;
+  padding-bottom: 10px; }
+
+.footer__legal-column--text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #858585; }
+
+.footer__column--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  z-index: 2; }
+
+.footer__column--soc-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2; }
+
+.footer__bottom-line {
+  width: 100%;
+  border: 1px solid #969696;
+  z-index: 2; }
+
+.footer__copyright-text {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  color: #858585;
+  z-index: 2; }
+
+.footer__copyright-container {
+  padding-bottom: 25px;
+  background: #232439;
+  z-index: 2; }
+
+@media only screen and (max-width: 1250px) {
+  .footer__container {
+    display: block;
+    text-align: center; }
+  .footer__column--item {
+    display: block; }
+  .footer__column--soc-networks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer__column {
+    margin-top: 20px; }
+  footer p {
+    text-align: center; }
+  .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer__column--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }

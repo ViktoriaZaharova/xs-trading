@@ -1,0 +1,94 @@
+@import "vars"
+
+footer p
+  margin: 0
+  padding: 0
+  font-family: "Inter", sans-serif
+  text-align: start
+
+.footer__container
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-wrap: wrap
+  background: #232439
+  padding-bottom: 30px
+  gap: 130px
+  padding-top: 20px
+  z-index: 2
+
+.footer__logo, .footer__column
+  z-index: 2
+
+.footer__legal-column--header
+  font-weight: 500
+  font-size: 16px
+  line-height: 23px
+  color: #969696
+  padding-bottom: 10px
+
+.footer__legal-column--text
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
+  text-transform: lowercase
+  color: #858585
+
+.footer__column--item
+  display: flex
+  align-items: center
+  gap: 10px
+  margin-top: 5px
+  z-index: 2
+
+.footer__column--soc-networks
+  display: flex
+  gap: 25px
+  align-items: center
+  z-index: 2
+
+.footer__bottom-line
+  width: 100%
+  border: 1px solid #969696
+  z-index: 2
+
+.footer__copyright-text
+  text-align: center
+  padding-top: 20px
+  font-weight: 500
+  font-size: 12px
+  line-height: 23px
+  color: #858585
+  z-index: 2
+
+.footer__copyright-container
+  padding-bottom: 25px
+  background: #232439
+  z-index: 2
+
+@media only screen and (max-width: 1250px)
+  .footer__container
+    display: block
+    text-align: center
+
+  .footer__column--item
+    display: block
+
+  .footer__column--soc-networks
+    justify-content: center
+
+  .footer__column
+    margin-top: 20px
+
+  footer p
+    text-align: center
+
+  .footer__logo
+    display: flex
+    justify-content: center
+
+  .footer__column--item
+    display: flex
+    gap: 5px
+    flex-direction: column
+    justify-content: center
