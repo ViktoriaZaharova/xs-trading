@@ -128,7 +128,7 @@
       left: calc(50% + 106px)
       bottom: -103px
       width: 212px
-      height: 91px
+      height: 95px
       transform: translate(-50%,0)
       background: url("../img/arrow1.svg") no-repeat center
         size: 100%
@@ -288,7 +288,7 @@
 
 /*==========  section how-work ==========*/
 .how-work
-  background: url("../img/work-bg.svg") no-repeat center top
+  background: url("../img/work-bg.svg") no-repeat center bottom
     size: cover
   padding: 35px 0 55px
   margin: 0 0 130px
@@ -299,7 +299,7 @@
     overflow: hidden
     max-width: 703px
     width: 100%
-    margin-left: auto
+    margin: -20px -10px 20px auto
     img
       width: 100%
   &__content
@@ -429,6 +429,8 @@
   min-height: auto
   background: url("../img/figure-bg2.svg") no-repeat center bottom
     size: 100%
+  >.row
+    align-items: flex-end
 
 .signals-info-box__image2
   max-width: 602px
