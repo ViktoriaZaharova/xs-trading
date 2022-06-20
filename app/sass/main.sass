@@ -2,7 +2,7 @@
 
 /*==========  section home ==========*/
 .home
-  background: url("../img/home-bg.svg") no-repeat center top
+  background: url("../img/home-bg.svg") no-repeat center bottom
     size: cover
   position: relative
   padding: 90px 0 169px
@@ -60,6 +60,11 @@
 .what-trading
   margin: 130px 0 39px
 
+.what-forex
+  .list-decor
+    li
+      p
+        max-width: 505px
 /*==========  section what-trading end  ==========*/
 
 /*==========  section trading-russia ==========*/
@@ -73,6 +78,7 @@
   line-height: 150%
   border-radius: 14px
   box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13)
+  height: 100%
   p
     margin: 0 0 20px
     &:last-child
@@ -106,7 +112,7 @@
 
 .taxes-wrapper
   display: flex
-  align-items: stretch
+  align-items: flex-start
   justify-content: space-between
   flex-wrap: wrap
 
@@ -159,30 +165,33 @@
 
 .software-box
   width: 100%
-  display: flex
-  align-items: flex-start
   margin: 0 0 20px
   padding: 25px 41px 17px 39px
   box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13)
   border-radius: 14px
-  min-height: 180px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
   &__icon
     width: 66px
     min-width: 66px
     height: 66px
     margin: 0 37px 0 0
-    box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36)
+    box-shadow: 0 10px 22px -2px rgba(109, 171, 255, 0.36)
     border-radius: 15px
     padding: 13px
     @include d-flex
-  &__text
-    padding: 20px 0 0
+  &__body
+    padding: 0 0 0 103px
+    line-height: 150%
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
   h4
-    margin: 0 0 20px
     font-weight: bold
     font-size: 20px
-  p
-    line-height: 150%
   &.bg-blue
     border: 1px solid rgba(57, 138, 248, 0.2)
     background: #E0EEFF
@@ -207,6 +216,7 @@
     .software-box__icon
       box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3)
       background: linear-gradient(154.49deg, #FF858A 6.61%, #F04148 89.72%)
+
 
 
 .advantages-software
@@ -370,7 +380,7 @@
       margin: 0
 
 .signals-info-box
-  margin: 60px 0 0
+  margin: 40px 0 0
   padding: 20px
   background: url("../img/figure-bg.svg") no-repeat center top
     size: 100%
@@ -546,7 +556,7 @@
     margin: 0 auto 15px
     width: 100%
     text-align: center
-    max-width: 407px
+    max-width: 437px
   .text
     max-width: 453px
     font-size: 13px
@@ -597,3 +607,214 @@
   @include d-flex
 
 /*==========  section how-earn end  ==========*/
+
+
+/*==========  section blog  ==========*/
+.blog
+  padding: 98px 0 40px
+  background: #232439 url("../img/blog-bg.svg") no-repeat center top
+    size: 100%
+
+  .container
+    max-width: 1360px
+  h1
+    text-align: center
+    margin: 0 auto
+    color: #FA3742
+    font-size: 90px
+    line-height: 1
+    background: transparent
+    letter-spacing: 0
+    -webkit-text-fill-color: inherit
+    max-width: none
+    -webkit-text-stroke: 1px #FA3742
+    .title-text
+      z-index: -1
+      filter: blur(6px)
+      -webkit-text-stroke: 1px #FA3742
+      background: transparent
+      -webkit-text-fill-color: inherit
+      color: #FA3742
+
+
+.blog-title
+  text-align: center
+  padding: 93px 10px
+  background: linear-gradient(90deg, rgba(250, 55, 66, 0.15) 0%, rgba(250, 55, 66, 0) 50%)
+  width: 100%
+  border-radius: 10px 0 0 10px
+  position: relative
+  z-index: 1
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    border-radius: 10px 0 0 10px
+    left: 0
+    top: 0
+    background: linear-gradient(90deg, #FF3842 -1.33%, rgba(255, 56, 66, 0) 52.5%)
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+    -webkit-mask-composite: xor
+    mask-composite: exclude
+    padding: 2px
+  &:after
+    filter: blur(10px)
+
+
+.nav-tabs
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  padding: 112px 10px 88px
+  border: none
+  letter-spacing: 0.05em
+  font-size: 45px
+  font-family: $font
+  position: relative
+  z-index: 1
+  margin: -34px auto 98px
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    left: 0
+    top: 0
+    background: linear-gradient(90deg, #3535FF -1.33%, rgba(53, 53, 255, 0) 57.86%)
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+    -webkit-mask-composite: xor
+    mask-composite: exclude
+    padding: 2px
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+  &:after
+    filter: blur(10px)
+  .nav-item
+    padding: 0 40px
+    margin: 0
+    position: relative
+    z-index: 1
+    &:before, &:after
+      content: ''
+      position: absolute
+      bottom: 8px
+      right: 0
+      width: 2px
+      height: 48px
+      background: #3E3CFE
+    &:after
+      content: ''
+      position: absolute
+      filter: blur(4px)
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+      &:before, &:after
+        display: none
+  .nav-link
+    background: transparent
+    border: none
+      radius: 0
+    padding: 0
+    position: relative
+    color: transparent
+    -webkit-text-stroke: 1px #3E3CFE
+    margin: 0
+    &.active
+      background: transparent
+      -webkit-text-stroke: 1px #3E3CFE
+      color: #3535FF
+      .nav-link__subtext
+        color: #3535FF
+        -webkit-text-stroke: initial
+    &__subtext
+      position: absolute
+      left: 0
+      bottom: 0
+      filter: blur(4px)
+      //z-index: -1
+      color: transparent
+      -webkit-text-stroke: 1px #3E3CFE
+      width: 100%
+      height: 100%
+      display: inline-block
+
+.tab-content
+  padding: 0
+  border: none
+    radius: 0
+
+.blog-card
+  width: 100%
+  margin: 0 0 40px
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  padding: 22px 38px
+  color: #fff
+  border: 1px solid rgba(255, 255, 255, 0.15)
+    radius: 10px
+  background: #2C2D48
+  font-family: $text-font
+  .box-text
+    color: #7B7EA8
+    font-size: 16px
+    line-height: 24px
+    font-feature-settings: 'kern' off
+    margin: 20px 0
+    max-width: 504px
+  &__image
+    @include d-flex
+    max-width: 432px
+    width: 100%
+    height: 252px
+    border: 1px solid rgba(255, 255, 255, 0.15)
+      radius: 10px
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__body
+    width: calc(100% - 432px)
+    padding: 0 0 0 50px
+    display: flex
+    flex-direction: column
+  &__title
+    text-transform: uppercase
+    color: #fff
+    font-size: 28px
+    font-weight: bold
+    max-width: 504px
+  .btn
+    margin: auto 0 0
+
+
+.btn-play
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 94px
+  height: 94px
+  background: rgba(44, 45, 72, 0.8)
+  border-radius: 50%
+  img
+    width: auto
+    height: auto
+    object-fit: contain
+    margin-right: -7px
+
+
+/*==========  section blog end  ==========*/

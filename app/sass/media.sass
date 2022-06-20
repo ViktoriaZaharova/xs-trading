@@ -69,6 +69,15 @@
   .tips
     margin: 80px 0
 
+  .nav-tabs
+    font-size: 30px
+    .nav-item
+      &:before, &:after
+        height: 30px
+
+
+  .blog h1
+    font-size: 70px
 
 @media only screen and (max-width: 992px)
   .sing-box
@@ -206,6 +215,21 @@
     h2
       margin: 0 0 30px
 
+  .blog-card
+    padding: 18px 24px
+    &__image
+      max-width: 300px
+    &__body
+      width: calc(100% - 300px)
+      padding: 0 0 0 20px
+
+  .btn-play
+    width: 62px
+    height: 62px
+    img
+      max-width: 18px
+      height: auto
+      object-fit: contain
 
 @media only screen and (max-width: 768px)
   .home
@@ -246,8 +270,7 @@
     padding: 20px
     &__icon
       margin: 0 20px 0 0
-    &__text
-      padding: 0
+
 
   .xsignals
     padding: 50px 0 60px
@@ -286,6 +309,16 @@
   .strategy-slider-item__content
     padding: 20px 0
 
+  .blog
+    padding: 0 0 48px
+
+  .blog-card
+    margin: 0 0 30px
+    &__image
+      max-width: 250px
+    &__body
+      width: calc(100% - 250px)
+
 
 @media only screen and (max-width: 576px)
   .advantages-software__body-item
@@ -321,6 +354,45 @@
   .how-earn-box__number
     font-size: 80px
 
+  .blog
+    background: url("../img/blog-bg-mob.svg") no-repeat center top
+      size: cover
+    h1
+      font-size: 40px
+
+  .blog-title
+    padding: 58px 0 97px
+    width: calc(100% + 40px)
+    margin: 0 -20px
+
+
+  .nav-tabs
+    flex-direction: column
+    align-items: center
+    margin: -34px -20px 39px
+    width: calc(100% + 40px)
+    padding: 75px 0 26px
+    .nav-item
+      margin: 0 auto 30px
+      padding: 0
+      &:before, &:after
+        display: none
+      &:last-child
+        padding: 0
+        margin: 0 auto
+
+  .blog-card
+    flex-direction: column
+    align-items: flex-start
+    &__image
+      max-width: none
+    &__body
+      width: 100%
+      padding: 0
+      margin: 15px 0 0
+    &__title
+      font-size: 18px
+
 @media only screen and (max-width: 480px)
   h1
     font-size: 24px
@@ -333,7 +405,11 @@
     font-size: 24px
     letter-spacing: 0
 
-
+  .blog-card
+    .box-text
+      display: none
+    &__title
+      margin: 0 0 11px
 
 @media only screen and (max-width: 380px)
   h1
@@ -344,14 +420,14 @@
   h2
     font-size: 22px
 
-  .software-box
-    flex-wrap: wrap
-    &__icon
-      margin: 0 0 15px
-
   .xsignals-box
     flex-direction: column
     align-items: flex-start
     &__body
       width: 100%
       margin: 15px 0 0
+
+  .blog-card
+    &__image
+      height: 154px
+

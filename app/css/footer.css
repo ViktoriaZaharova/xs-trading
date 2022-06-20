@@ -82,7 +82,8 @@ footer p {
 @media only screen and (max-width: 1250px) {
   .footer__container {
     display: block;
-    text-align: center; }
+    text-align: center;
+    padding: 20px 15px; }
   .footer__column--item {
     display: block; }
   .footer__column--soc-networks {

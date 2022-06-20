@@ -212,6 +212,27 @@ button, .btn
     background: $black
     color: #fff
 
+.btn-dark-blue
+  background: #3C3D8C
+  border-radius: 5px
+  color: #fff
+  padding: 0 15px
+  height: 26px
+  width: fit-content
+  font-size: 12px
+  font-family: $text-font
+  .btn-icon
+    width: 38px
+    height: 8px
+    margin-left: 8px
+    @include d-flex
+  &:hover
+    background: $hover
+    color: #fff
+
+
+
+
 .svg-icon
   display: inline-block
   width: 100%
@@ -349,3 +370,50 @@ h2
   position: absolute
   bottom: 60px
   padding-left: 25px
+
+.nav-pagination
+  width: 100%
+
+.nav-pagination-arrows
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  margin: 0 0 4px
+  &__item
+    @include d-flex
+    width: 28px
+    height: 28px
+    min-width: 28px
+    border: 1px solid #FFFFFF
+      radius: 5px
+    &:first-child
+      margin: 0 17px 0 0
+      transform: rotate(180deg)
+
+.pagination
+  justify-content: center
+  border-radius: 0
+  font-size: 12px
+  line-height: 20px
+  font-weight: 500
+  .page-item
+    margin: 0 9px 0 0
+    &:last-child
+      margin: 0
+    .page-link
+      background: transparent
+      color: rgba(#fff, .3)
+      padding: 0
+      border: none
+        radius: 0
+      outline: none
+      box-shadow: none
+      line-height: 20px
+      &:hover
+        color: $accent
+    &.active
+      .page-link
+        background: transparent
+        color: #fff
+
