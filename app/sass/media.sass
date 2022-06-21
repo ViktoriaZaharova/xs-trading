@@ -1,6 +1,12 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1300px)
+  .how-work
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: -40px top
+
 @media only screen and (max-width: 1200px)
   h1
     font-size: 40px
@@ -27,7 +33,7 @@
 
   .list-number__item, .signals-info-col2 .list-number__item
     margin: 0 0 20px
-    
+
   .signals-info-box
     background: transparent
     margin: 30px 0 0
@@ -87,8 +93,8 @@
     text-align: center
     margin: 0 auto
     max-width: none
-    br
-      display: none
+    //br
+    //  display: none
 
   .what-trading
     margin: 100px 0 40px
@@ -114,6 +120,8 @@
 
   .how-work
     margin: 0 0 70px
+    background: url("../img/work-bg-mob.svg") no-repeat center top
+      size: 100%
     h2
       width: fit-content
       margin: 0 auto 20px
@@ -231,6 +239,10 @@
       height: auto
       object-fit: contain
 
+  .signals-info-box__image
+    max-width: 600px
+    margin: 0 auto 20px
+
 @media only screen and (max-width: 768px)
   .home
     padding: 90px 0 110px
@@ -270,6 +282,8 @@
     padding: 20px
     &__icon
       margin: 0 20px 0 0
+    &__body
+      padding: 15px 0 0 90px
 
 
   .xsignals
@@ -395,7 +409,6 @@
 
 @media only screen and (max-width: 480px)
   h1
-    font-size: 24px
     letter-spacing: 0
 
   .home
@@ -410,6 +423,15 @@
       display: none
     &__title
       margin: 0 0 11px
+
+@media only screen and (max-width: 420px)
+  h1
+    font-size: 24px
+
+  .how-work
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: -40px top
 
 @media only screen and (max-width: 380px)
   h1
